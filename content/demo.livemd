@@ -1,0 +1,17 @@
+# DHL Shipment Tracking
+
+```elixir
+Mix.install([
+  {:ex_dhl_tracker, github: "chgeuer/ex_dhl_tracker"}
+])
+```
+
+## Section
+
+```elixir
+sendungs_nummer_input = Kino.Input.text("Sendungsnummer", default: "00340434656456463588")
+```
+
+```elixir
+DHL.kino(Kino.Input.read(sendungs_nummer_input))
+```
